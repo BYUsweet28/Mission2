@@ -31,7 +31,6 @@ namespace Mission2
             for (int i = 0; i < numRolls; i++)
             {
                 results[i] = (rnd.Next(6) + 1) + (rnd.Next(6) + 1);
-                Console.WriteLine(results[i]);
                 
                 if (results[i] == 2)
                 {
@@ -78,8 +77,7 @@ namespace Mission2
                     twelve += 1;
                 }
             }
-            Console.WriteLine(two/numRolls);
-            //Console.WriteLine(Math.Round((two / numRolls) * 100), 0);
+
             decimal[] asterisks = {Math.Round((decimal)(two / numRolls) * 100, 0), Math.Round((decimal)(three / numRolls) * 100, 0), Math.Round((decimal)(four / numRolls) * 100, 0), Math.Round((decimal)(five / numRolls) * 100, 0), Math.Round((decimal)(six / numRolls) * 100, 0), Math.Round((decimal)(seven / numRolls) * 100, 0), Math.Round((decimal)((eight / numRolls) * 100), 0), Math.Round((decimal)((nine / numRolls) * 100), 0), Math.Round((decimal)((ten / numRolls) * 100), 0), Math.Round((decimal)((eleven / numRolls) * 100), 0), Math.Round((decimal)((twelve / numRolls) * 100), 0)};
 
             Console.WriteLine("DICE ROLLING SIMULATION RESULTS");
